@@ -1,0 +1,111 @@
+@use './styles/ds';
+@use './styles/vars';
+@use './styles/buttons';
+@use './styles/cards.scss';
+@use './styles/navbar';
+@use './styles/home';
+@use './styles/alert';
+@use './styles/articlesSection';
+@use './styles/dividerWithButton';
+@use './styles/tienda';
+@use './styles/usados';
+@use './styles/editorial';
+@use './styles/bookCovers';
+@use './styles/distribuidora';
+@use './styles/historia';
+@use './styles/footer';
+@import './styles/mixins';
+
+.main{
+   background:  vars.$color-bg-ligth;
+}
+
+.mainContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    background: vars.$color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.homeContainer{
+    @include box-shadow;
+}
+
+.title{
+  @include title;
+}
+
+.text{
+  @include text;
+}
+
+.articleTitle{
+    font-family: vars.$font-article;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+.articleText{
+    @include articleText
+}
+
+.flyer{
+    width: 300px;
+    cursor: pointer;
+    transition: border-box 0.5s ease-in-out;
+}
+
+
+.flyer:hover{
+    @include box-shadow;
+
+}
+
+.flyer:focus{
+    @include box-shadow;
+
+}
+
+.textLink{
+    @include linkInText;
+}
+
+.marginBottomSection{
+    @include marginBottomSection;
+}
+
+
+
+.flyerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-block: 2rem;
+}
+
+.flyerText{
+    @include text;
+    padding-left: 1.2rem;
+
+}
+
+
+
+@media(min-width:950px){
+.flyerContainer{
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.flyerText{
+    padding-left: initial;
+}
+}

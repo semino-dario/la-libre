@@ -1,0 +1,35 @@
+@mixin box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@mixin title{
+    font-family: vars.$font-title;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: vars.$color-black;
+    font-size: 2.5rem;
+}
+
+@mixin text{
+    margin-top: 1rem;
+    font-family: vars.$font-text;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+@mixin articleText {
+    font-family: vars.$font-article;
+    letter-spacing: 0.5px;
+    font-weight: 200;
+}
+
+@mixin linkInText{
+    font-weight: 700;
+}
+
+@mixin marginBottomSection{
+    margin-bottom: 10%;
+}
