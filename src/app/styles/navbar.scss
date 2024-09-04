@@ -53,9 +53,9 @@
     color: vars.$color-white;
     font-weight: 600;
     font-size: 1.5rem;
-    width:23rem;
+    width:100vw;
     padding: 2rem;
-    height: 110vh;
+    height: 100vh;
     
 }
 
@@ -76,7 +76,6 @@
     flex-direction: column;
     gap:1.5rem;
     list-style: none;
-    padding-top: 1rem;
 }
 
 .navList li{
@@ -90,14 +89,20 @@
 
 
 .navbarImage{
-    width: 230px;
+    width: 210px;
     height: auto;
     margin-left: 6rem;
   
 }
 
+@media(min-width:500px){
+    .navItemsContainer{
+        width: 23rem;
+    }
+}
 
-@media (min-width: 600px) {
+@media (min-width: 600px) { 
+
     .name{
         display:block;
     }
