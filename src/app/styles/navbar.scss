@@ -92,6 +92,7 @@
     width: 210px;
     height: auto;
     margin-left: 6rem;
+    display: none;
   
 }
 
@@ -109,5 +110,9 @@
 
     .iconsContainer{
         display: flex;
+    }
+
+    .navbarImage{
+        display:block;
     }
 }
