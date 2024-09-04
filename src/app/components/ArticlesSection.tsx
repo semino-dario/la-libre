@@ -12,7 +12,7 @@ interface ArticlesSectionProps{
 const ArticlesSection:React.FC<ArticlesSectionProps> = ({articles}) => {
 
     return(
-    <div className={styles.articleSectionContainer}>
+    <div id="leenos" className={styles.articleSectionContainer}>
         <section className={styles.articleSectionGrid}>
             <div className={styles.articleSectionHeader}>
               <img src={arterix.src} alt="" />

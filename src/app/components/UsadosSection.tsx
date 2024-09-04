@@ -6,7 +6,7 @@ import CardSimple from './cards/CardSimpe';
 export default function UsadosSection () {
     return(
         <div>
-        <section className={styles.usadosContainer}>
+        <section id="usados" className={styles.usadosContainer}>
             <h2 className={styles.title}>Libros usados</h2>
             <img className={styles.underlineUsados} src={underline.src} alt="imagen decorativa" />
             <div className={styles.usadosCardsContainer}>

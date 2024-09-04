@@ -30,15 +30,15 @@ export default function Navbar () {
           <div className={`${styles.movePanel} ${closeNavBar && styles.closed}`}>
           <div className={styles.navItemsContainer} >
             <ul className={styles.navList}>
-                <Link onClick={()=>setCloseNavBar(true)} href={""}><li>Talleres</li></Link>
-                <Link onClick={()=>setCloseNavBar(true)} href={""}> <li>Actividades</li></Link>
-                <Link onClick={()=>setCloseNavBar(true)} href={""}><li>Leenos</li></Link>
-                <Link onClick={()=>setCloseNavBar(true)} href={""}><li>Tienda Online</li></Link>
-                <Link onClick={()=>setCloseNavBar(true)} href={""}><li>Libros Usados</li></Link>
-                <Link onClick={()=>setCloseNavBar(true)} href={""}><li>La Libre Editora</li></Link>
-                <Link onClick={()=>setCloseNavBar(true)} href={""}><li>Distribuidora</li></Link>
-                <Link onClick={()=>setCloseNavBar(true)} href={""}><li>Nuestra Historia</li></Link>
-                <Link onClick={()=>setCloseNavBar(true)} href={""}><li>Contacto</li></Link>
+                <Link onClick={()=>setCloseNavBar(true)} href={"#talleres"}><li>Talleres</li></Link>
+                <Link onClick={()=>setCloseNavBar(true)} href={"#actividades"}> <li>Actividades</li></Link>
+                <Link onClick={()=>setCloseNavBar(true)} href={"#leenos"}><li>Leenos</li></Link>
+                <Link onClick={()=>setCloseNavBar(true)} href={"#tienda"}><li>Tienda Online</li></Link>
+                <Link onClick={()=>setCloseNavBar(true)} href={"#usados"}><li>Libros Usados</li></Link>
+                <Link onClick={()=>setCloseNavBar(true)} href={"#editorial"}><li>La Libre Editora</li></Link>
+                <Link onClick={()=>setCloseNavBar(true)} href={"#distribuidora"}><li>Distribuidora</li></Link>
+                <Link onClick={()=>setCloseNavBar(true)} href={"#historia"}><li>Nuestra Historia</li></Link>
+                <Link onClick={()=>setCloseNavBar(true)} href={"#contacto"}><li>Contacto</li></Link>
             </ul>
             <img className={styles.navbarImage} src={nena.src} alt="Imagen de niña leyendo" />
        </div>

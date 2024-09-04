@@ -11,8 +11,8 @@ interface EditorialSectionProps{
 
 const EditorialSection:React.FC<EditorialSectionProps> = ({books}) => {
     return(
-        <div className={styles.marginBottomSection}>
-        <section className={styles.editorialContainer}>
+        <div id="editorial" className={styles.marginBottomSection}>
+        <section  className={styles.editorialContainer}>
             <div className={styles.editorialContent}>
               <div>
                 <img className={styles.asterixEditorial} src={asterix.src} alt="imagen decorativa" />

@@ -5,7 +5,7 @@ import asterix from '../assets/decos/asterix.svg'
 export default function HistoriaSection () {
 
     return(
-        <section className={styles.historiaContainer}>
+        <section id="historia" className={styles.historiaContainer}>
             <div className={styles.historiaContent}>
                 <img src={asterix.src} alt="imagen decorativa" />
                 <h2 className={styles.title}>Nuestra historia</h2>

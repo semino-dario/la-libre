@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function TiendaOnlineSection () {
     return(
-        <section className={styles.tiendaMainContainer}>
+        <section id="tienda" className={styles.tiendaMainContainer}>
         <div className={styles.tiendaContainer}>
             <div className={styles.tiendaTitle}>
               <img className={styles.star}src={star.src} alt="imagen decorativa" />

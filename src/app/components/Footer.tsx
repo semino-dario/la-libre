@@ -9,7 +9,7 @@ import mailGreen from '../assets/icons/mail-green.jpg'
 export default function Footer () {
 
     return(
-        <footer className={styles.containerFooter}>
+        <footer id="contacto" className={styles.containerFooter}>
             <img src={bgShapeFooter.src} alt="imagen decorativa de fondo" />
             <section className={styles.containerFooterContent}>
                 <div className={styles.footerText1}>

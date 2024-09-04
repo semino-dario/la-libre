@@ -8,7 +8,7 @@ import bgShape from '../assets/decos/bg-shape-yellow.svg'
 export default function DistribuidoraSection() {
     return(
     <div >
-        <section className={styles.distribuidoraContainer}>
+        <section id="distribuidora" className={styles.distribuidoraContainer}>
             <div className={styles.distribuidoraHeader}>
               <h2 className={styles.title}>Distribuidora</h2>
               <img className={styles.underlineDistribuidora} src={underline.  src} alt="imagen decorativa" />
