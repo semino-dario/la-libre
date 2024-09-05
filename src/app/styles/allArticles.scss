@@ -42,13 +42,12 @@
 
 .allArticlesMainContainer main{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 18.75rem));
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 19.75rem));
     gap: 2rem;
     width: 100%;
     justify-content: center; 
     align-content: center; 
     margin-bottom: 5rem;
-    padding-left: 1.5rem;
 }
 
 .footerAllArticles{

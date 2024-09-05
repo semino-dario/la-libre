@@ -12,32 +12,27 @@ const AllArticles:React.FC<AllArticlesProps> = ({articles}) => {
     return(
         <section className={styles.allArticlesMainContainer}>
             <header className={styles.allArticlesHeader}>
-            <img className={styles.allArticlesImage} src={nena.src} alt="imagen de niña leyendo" />
-            <div className={styles.allArticlesHeaderContent}>
+              <img className={styles.allArticlesImage} src={nena.src} alt="imagen de niña leyendo" />
+              <div className={styles.allArticlesHeaderContent}>
                 <h1>
                     todos nuestros artículos
                 </h1>
                 <p>Entrevistas, reseñas, recomendaciones, artículos y mucho más...</p>
-            </div>
+              </div>
             </header>
             <main>
+              { articles && 
+              articles.map( (art, index) =>
+              <div key={index}>
                 <ArticleCard
-                title={"Un artículo muy importante"}
-                author={"Darío Semino"}
-                image='https://res.cloudinary.com/dsw6fpqoz/image/upload/v1724858854/Image2_txm016.jpg'
-                />
-                <ArticleCard
-                title={"Un artículo muy importante"}
-                author={"Darío Semino"}
-                image="https://res.cloudinary.com/dsw6fpqoz/image/upload/v1724953721/Rectangle_4182_lnj7ji.jpg"
-                /> <ArticleCard
-                title={"Un artículo muy importante"}
-                author={"Darío Semino"}
-                image="https://res.cloudinary.com/dsw6fpqoz/image/upload/v1724781533/Card_2_idjtx9.jpg"
-                />
+                title={art.title}
+                author={art.author}
+                image={art.image}
+                href={"http://localhost:3000/articulo/1/titulo"}
+                /></div>)}
             </main>
             <div className={styles.footerAllArticles}>
-            <Footer/>
+              <Footer/>
             </div>
         </section>
     )

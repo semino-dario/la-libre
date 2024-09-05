@@ -26,7 +26,8 @@ const ArticlesSection:React.FC<ArticlesSectionProps> = ({articles}) => {
                <ArticleCard 
                  title={art.title}
                  author={art.author}
-                 image={art.image}     
+                 image={art.image}
+                 href={"https://la-libre.vercel.app/articulo/1/titulo"}     
                />
               </div>)}
         </section>

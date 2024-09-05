@@ -38,6 +38,14 @@
     font-weight: 300;
 }
 
+@mixin articleTitle{
+    font-family: vars.$font-article;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+
 @mixin linkInText{
     font-weight: 700;
 }
