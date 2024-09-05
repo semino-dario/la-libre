@@ -4,7 +4,7 @@ import styles from "./page.module.scss";
 
 export default function MainSite() {
   return (
-    <div className={`${styles.mainContainer} ${styles.wallpaper}`}>
+    <div className={styles.mainContainer}>
       <Navbar/>
       <Home/>
     </div>

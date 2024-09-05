@@ -31,7 +31,7 @@ const ArticlesSection:React.FC<ArticlesSectionProps> = ({articles}) => {
               </div>)}
         </section>
         <br />
-        <Link href={""}>
+        <Link href={"/articulos"}>
         <PrimaryButton
         primary={false}
         text="Ver todos los artículos"
